@@ -9,6 +9,10 @@ A practical,  catalog of security tools for students, red/blue teams, and builde
 
 Format inspired by the structure and navigation style of my AI list. This one is tuned for security workflows and fast lookup.
 
+<p align="center">
+  <img alt="A futuristic cyber security interface" src="https://images.unsplash.com/photo-1690585703267-de31ea667ef0?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="450">
+</p>
+
 > Legal and ethical notice: Use these tools only on systems you own or are explicitly authorized to test. Many are dual-use. If you don’t have written permission, don’t touch it. This repository is intended for educational and authorized professional use only. The tools and resources listed here are for learning, security testing, and defensive research in controlled environments.
 
 ---
