@@ -5,7 +5,7 @@
 [![Forks](https://img.shields.io/github/forks/eudk/awesome-cybersecurity?style=social)](#)
 [![Last Commit](https://img.shields.io/badge/last%20commit-auto--updated-informational)](#)
 
-A practical,  catalog of security tools for students, red/blue teams, and builders. Focus is on widely used, well-maintained, and actually useful software across recon, web/API, cloud, containers, AD, DFIR, and more.
+A practical, catalog of security tools for students, red/blue teams, and builders. Focus is on widely used, well-maintained, and actually useful software across recon, web/API, cloud, containers, AD, DFIR, and more.
 
 Format inspired by the structure and navigation style of my AI list. This one is tuned for security workflows and fast lookup.
 
@@ -21,46 +21,45 @@ Format inspired by the structure and navigation style of my AI list. This one is
 
 Use your browser’s find (Ctrl+F or Cmd+F) or jump via the table:
 
-| Category | What’s in it |
-|---|---|
-| [Core / Must-Know](#core--must-know) | Baseline tooling every security practitioner should know |
-| [Recon & Asset Discovery](#recon--asset-discovery) | Discovery, subdomains, screenshots, tech ﬁngerprints |
-| [Port Scanning & Enumeration](#port-scanning--enumeration) | Fast/precise scanning, service probing |
-| [Web App Testing](#web-app-testing) | Proxies, fuzzers, SQLi/XSS/dir brute, parameter miners |
-| [API Security](#api-security) | REST/gRPC fuzzers, schema-based testing |
-| [CMS & Framework Scanners](#cms--framework-scanners) | WordPress, Drupal, Joomla, general CMS |
-| [Cloud Security](#cloud-security) | AWS/Azure/GCP posture, IAM hunting, S3 checks |
-| [Containers & Kubernetes](#containers--kubernetes) | Image scanning, runtime defense, CIS checks |
-| [IaC, SBOM & Dependency Risk](#iac-sbom--dependency-risk) | Terraform checks, SCA, SBOM generation |
-| [Secrets Detection](#secrets-detection) | Git and filesystem secrets finders |
-| [Active Directory & Windows](#active-directory--windows) | Enumeration, LLMNR/NTLM, ADCS, privesc |
-| [Network, Traffic & MITM](#network-traffic--mitm) | NIDS, packet capture, dissecting, interception |
-| [Wireless & Bluetooth](#wireless--bluetooth) | 802.11 capture/attacks, WPA/PMKID, BLE |
-| [Mobile Security](#mobile-security) | Android/iOS reversing, instrumentation |
-| [Reverse Engineering & Binary](#reverse-engineering--binary) | Disassemblers, debuggers, symbolic exec |
-| [Fuzzing](#fuzzing) | AFL-class fuzzers, API fuzzers |
-| [Credentials, Cracking & Wordlists](#credentials-cracking--wordlists) | Hashcat/JtR, spray/bruteforce, lists |
-| [OSINT & Threat Intel](#osint--threat-intel) | Footprinting, TI platforms, hunting |
-| [Phishing & Social](#phishing--social) | Campaign frameworks, kits (defensive research use only) |
-| [C2 & Post-Exploitation](#c2--post-exploitation) | Open C2, operators, pivoting |
-| [Vuln Scanning & Management](#vuln-scanning--management) | Network/web scanners, template engines |
-| [DFIR & Forensics](#dfir--forensics) | Memory, disk, Windows triage, timelines |
-| [Tunneling, Pivoting & Relays](#tunneling-pivoting--relays) | Socks/HTTP tunnels, relay tools |
-| [Helper Utilities](#helper-utilities) | CLI helpers that save time |
-| [Hardware, RF & OT Pentest Tools](#hardware-rf--ot-pentest-tools-flipper-class-and-beyond) | Flipper/Proxmark/SDR, embedded/JTAG, Hak5/O.MG |
-| [Books (Beginner → Advanced)](#books-beginner--advanced) | Curated reading path: foundations, web, RE, DFIR |
-| [Certifications](#certifications-by-level-and-intent) | Entry, offensive, blue team, cloud, governance/privacy |
-| [Hands-On Training Platforms](#hands-on-training-platforms-labs-ranges-ctfs) | TryHackMe/HTB, PortSwigger, OSINT/DFIR ranges |
-| [Courses & Structured Programs](#courses--structured-programs) | Free academic, vendor programs, guided tracks |
-| [Compliance](#compliance-frameworks-how-to-learn-tools-compliance-as-code) | ISO/NIST/CIS/GDPR/NIS2/DORA, tools, policy-as-code |
-
+| Category                                                                                   | What’s in it                                             |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| [Core / Must-Know](#core--must-know)                                                       | Baseline tooling every security practitioner should know |
+| [Recon & Asset Discovery](#recon--asset-discovery)                                         | Discovery, subdomains, screenshots, tech ﬁngerprints     |
+| [Port Scanning & Enumeration](#port-scanning--enumeration)                                 | Fast/precise scanning, service probing                   |
+| [Web App Testing](#web-app-testing)                                                        | Proxies, fuzzers, SQLi/XSS/dir brute, parameter miners   |
+| [API Security](#api-security)                                                              | REST/gRPC fuzzers, schema-based testing                  |
+| [CMS & Framework Scanners](#cms--framework-scanners)                                       | WordPress, Drupal, Joomla, general CMS                   |
+| [Cloud Security](#cloud-security)                                                          | AWS/Azure/GCP posture, IAM hunting, S3 checks            |
+| [Containers & Kubernetes](#containers--kubernetes)                                         | Image scanning, runtime defense, CIS checks              |
+| [IaC, SBOM & Dependency Risk](#iac-sbom--dependency-risk)                                  | Terraform checks, SCA, SBOM generation                   |
+| [Secrets Detection](#secrets-detection)                                                    | Git and filesystem secrets finders                       |
+| [Active Directory & Windows](#active-directory--windows)                                   | Enumeration, LLMNR/NTLM, ADCS, privesc                   |
+| [Network, Traffic & MITM](#network-traffic--mitm)                                          | NIDS, packet capture, dissecting, interception           |
+| [Wireless & Bluetooth](#wireless--bluetooth)                                               | 802.11 capture/attacks, WPA/PMKID, BLE                   |
+| [Mobile Security](#mobile-security)                                                        | Android/iOS reversing, instrumentation                   |
+| [Reverse Engineering & Binary](#reverse-engineering--binary)                               | Disassemblers, debuggers, symbolic exec                  |
+| [Fuzzing](#fuzzing)                                                                        | AFL-class fuzzers, API fuzzers                           |
+| [Credentials, Cracking & Wordlists](#credentials-cracking--wordlists)                      | Hashcat/JtR, spray/bruteforce, lists                     |
+| [OSINT & Threat Intel](#osint--threat-intel)                                               | Footprinting, TI platforms, hunting                      |
+| [Phishing & Social](#phishing--social)                                                     | Campaign frameworks, kits (defensive research use only)  |
+| [C2 & Post-Exploitation](#c2--post-exploitation)                                           | Open C2, operators, pivoting                             |
+| [Vuln Scanning & Management](#vuln-scanning--management)                                   | Network/web scanners, template engines                   |
+| [DFIR & Forensics](#dfir--forensics)                                                       | Memory, disk, Windows triage, timelines                  |
+| [Tunneling, Pivoting & Relays](#tunneling-pivoting--relays)                                | Socks/HTTP tunnels, relay tools                          |
+| [Helper Utilities](#helper-utilities)                                                      | CLI helpers that save time                               |
+| [Hardware, RF & OT Pentest Tools](#hardware-rf--ot-pentest-tools-flipper-class-and-beyond) | Flipper/Proxmark/SDR, embedded/JTAG, Hak5/O.MG           |
+| [Books (Beginner → Advanced)](#books-beginner--advanced)                                   | Curated reading path: foundations, web, RE, DFIR         |
+| [Certifications](#certifications-by-level-and-intent)                                      | Entry, offensive, blue team, cloud, governance/privacy   |
+| [Hands-On Training Platforms](#hands-on-training-platforms-labs-ranges-ctfs)               | TryHackMe/HTB, PortSwigger, OSINT/DFIR ranges            |
+| [Courses & Structured Programs](#courses--structured-programs)                             | Free academic, vendor programs, guided tracks            |
+| [Compliance](#compliance-frameworks-how-to-learn-tools-compliance-as-code)                 | ISO/NIST/CIS/GDPR/NIS2/DORA, tools, policy-as-code       |
 
 ---
 
 ## Conventions
 
-- [F] = Free/Open Source, [C] = Commercial or paid tier available  
-- OS tags: [Linux] [macOS] [Windows]  
+- [F] = Free/Open Source, [C] = Commercial or paid tier available
+- OS tags: [Linux] [macOS] [Windows]
 - Short on fluff. If you need deep docs, click through.
 
 ---
@@ -163,6 +162,19 @@ Use your browser’s find (Ctrl+F or Cmd+F) or jump via the table:
 - [cloudfox](https://github.com/BishopFox/cloudfox) [F] — CLI to find cloud attack paths.
 - [S3Scanner](https://github.com/abhn/S3Scanner) [F] — Public S3 bucket discovery.
 - [enumerate-iam](https://github.com/Netflix-Skunkworks/policyuniverse) [F] — IAM policy analysis.
+
+### 2025 Cloud Security Tools Verification Update
+
+| Tool               | Link                                                                                      | Last Commit | Activity       | Still Relevant | License      | Keep/Update/Remove    | Notes                                                                              |
+| ------------------ | ----------------------------------------------------------------------------------------- | ----------- | -------------- | -------------- | ------------ | --------------------- | ---------------------------------------------------------------------------------- |
+| **Prowler**        | [prowler-cloud/prowler](https://github.com/prowler-cloud/prowler)                         | Oct 2025    | Very Active    | Yes            | Apache-2.0   | Keep                  | Multi-cloud security & compliance scanner; supports CIS, NIST 800, HIPAA, FedRAMP. |
+| **ScoutSuite**     | [nccgroup/ScoutSuite](https://github.com/nccgroup/ScoutSuite)                             | May 2024    | Moderate       | Yes            | GPL-2.0      | Keep (Watch Activity) | Multi-cloud auditing tool; slower updates but still reliable for baseline checks.  |
+| **CloudQuery**     | [cloudquery/cloudquery](https://github.com/cloudquery/cloudquery)                         | Oct 2025    | Very Active    | Yes            | MPL-2.0      | Keep                  | ELT & CSPM framework; good for compliance data pipelines (AWS/GCP/Azure).          |
+| **CloudSploit**    | [aquasecurity/cloudsploit](https://github.com/aquasecurity/cloudsploit)                   | Oct 2025    | High           | Yes            | GPL-3.0      | Keep                  | CSPM tool from Aqua Security with HIPAA, PCI, and CIS profiles.                    |
+| **Pacu**           | [RhinoSecurityLabs/pacu](https://github.com/RhinoSecurityLabs/pacu)                       | Jul 2025    | Active         | Yes            | BSD-3-Clause | Keep                  | AWS exploitation framework for offensive testing and GRC validation labs.          |
+| **CloudFox**       | [BishopFox/cloudfox](https://github.com/BishopFox/cloudfox)                               | Aug 2025    | Active         | Yes            | MIT          | Keep                  | Cross-cloud enumeration tool for attack-path and trust analysis.                   |
+| **PolicyUniverse** | [Netflix-Skunkworks/policyuniverse](https://github.com/Netflix-Skunkworks/policyuniverse) | 2023        | Low            | Partially      | Apache-2.0   | Replace               | Outdated IAM policy parser; consider IAMbic or Policy Sentry.                      |
+| **S3Scanner**      | [abhn/S3Scanner](https://github.com/abhn/S3Scanner)                                       | N/A         | Inactive / 404 | No             | Unknown      | Remove                | Repository gone; replace with AWSBucketDump or Pacu S3 modules.                    |
 
 [Back to Top](#navigation)
 
@@ -419,6 +431,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 [Back to Top](#navigation)
 
 ---
+
 ## Hardware, RF & OT Pentest Tools (Flipper-class and beyond)
 
 > Legal/ethical: use only on systems you own or have written authorization to test.
@@ -471,6 +484,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 ## Books (Beginner → Advanced)
 
 ### Absolute Beginner / Career On-Ramp
+
 - **Cybersecurity First Principles** — Simple models, threat/defense basics (good for true beginners).  
   https://firstprinciples.uscyberpatriot.org
 - **The Basics of Hacking and Penetration Testing (2e) — P. Engebretson** — Lab-driven intro to tooling and method.  
@@ -479,6 +493,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://www.comptia.org/certifications/security
 
 ### Foundations (Must-read)
+
 - **Security Engineering (3e) — Ross Anderson** — Design, threat models, protocol failures, economics.  
   https://www.cl.cam.ac.uk/~rja14/book.html
 - **Serious Cryptography (2e) — JP Aumasson** — Modern crypto for engineers (AEAD, ECC, protocols).  
@@ -491,6 +506,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://sre.google/books/building-secure-and-reliable-systems/
 
 ### Networking, Packets & Blue Team
+
 - **Practical Packet Analysis (3e) — Chris Sanders** — Wireshark/TShark workflows.  
   https://nostarch.com/packetanalysis3
 - **Windows Internals (7e, Part 1 & 2)** — Core OS internals for detection/DFIR depth.  
@@ -499,6 +515,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://nostarch.com/linuxhardening
 
 ### Web/AppSec
+
 - **The Web Application Hacker’s Handbook (2e) — Stuttard & Pinto** — Methodical web testing.  
   https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%2C+2nd+Edition-p-9781118026472
 - **The Tangled Web — M. Zalewski** — Browser/web platform security internals.  
@@ -507,6 +524,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://www.manning.com/books/api-security-in-action
 
 ### Reverse Engineering, Exploit Dev & Malware
+
 - **The Ghidra Book (2e) — Eagle & Nance** — RE workflows in Ghidra.  
   https://nostarch.com/ghidra2
 - **Practical Binary Analysis — Andriesse** — Instrumentation, taint, lifting.  
@@ -521,6 +539,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://www.wiley.com/en-us/Practical+Reverse+Engineering-p-9781118787311
 
 ### Architecture, Threat Modeling & Culture
+
 - **Threat Modeling — Adam Shostack** — Processes and patterns to design safer systems.  
   https://www.wiley.com/en-us/Threat+Modeling-p-9781118809990
 - **Secure by Design — Mosher, tendean, de Win** — Design patterns to avoid whole classes of vulns.  
@@ -529,6 +548,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://dataintensive.net
 
 ### Free Standards/Guides (bookmark)
+
 - **OWASP WSTG** — End-to-end web testing methodology. https://owasp.org/www-project-web-security-testing-guide/
 - **OWASP ASVS** — Web security requirements catalog. https://owasp.org/ASVS/
 - **NIST SP 800-115** — Technical security testing guide. https://csrc.nist.gov/publications/detail/sp/800-115/final
@@ -542,11 +562,13 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 > Get what your target role requires; hands-on > theory for pentest/DFIR roles.
 
 ### Entry / Baseline
+
 - **ISC2 CC (Certified in Cybersecurity)** — Free training + low-cost exam; broad fundamentals. https://www.isc2.org/Certifications/CC
 - **CompTIA Security+ (SY0-701)** — Common baseline for junior analyst/consultant. https://www.comptia.org/certifications/security
 - **eJPT v2 (INE/eLearnSecurity)** — Practical junior pentest exam. https://ine.com/certifications/ejpt-certification
 
 ### Offensive / Pentest / Red Team
+
 - **OSCP / OSWE / OSEP (OffSec)** — Network/web/EDR-aware offense; proctored labs. https://www.offsec.com
 - **PNPT (TCM Security)** — Realistic AD-centric pentest with report & debrief. https://certifications.tcm-sec.com/pnpt/
 - **CRTO I/II (Zero-Point Security)** — Cobalt Strike-based red team operator. https://www.zeropointsecurity.co.uk/courses
@@ -554,17 +576,20 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 - **GPEN (SANS/GIAC)** — Pentest methodology & tooling. https://www.giac.org/certifications/gpen/
 
 ### Blue Team / DFIR / Detection
+
 - **GCIH / GCIA / GMON / GCFA / GREM (GIAC)** — Incidents, IDS, monitoring, forensics, malware. https://www.giac.org
 - **BTL1/BTL2 (Security Blue Team)** — Practical SOC/blue-team labs & exams. https://www.securityblue.team
 - **SC-200 (Microsoft)** — Security Operations Analyst (Defender/Sentinel). https://learn.microsoft.com/credentials/certifications/exams/sc-200/
 
 ### Cloud & Platform
+
 - **AWS Security – Specialty** — Depth in AWS security. https://aws.amazon.com/certification/
 - **Azure AZ-500 / SC-100** — Security Engineer + Cybersecurity Architect Expert. https://learn.microsoft.com/credentials/
 - **Google Professional Cloud Security Engineer** — GCP security design/ops. https://cloud.google.com/certification
 - **CKS (Kubernetes Security Specialist)** — K8s defensive hardening. https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/
 
 ### Governance / Privacy / Audit
+
 - **CISSP (ISC2)** — Broad management/architecture. https://www.isc2.org/certifications/cissp
 - **CISM / CISA (ISACA)** — Management and audit tracks. https://www.isaca.org/credentialing
 - **CCSP (ISC2)** — Cloud security architecture. https://www.isc2.org/certifications/ccsp
@@ -598,6 +623,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 ## Courses & Structured Programs
 
 ### Free / Open Academic
+
 - **MIT 6.858 Computer Systems Security** — Research-grade systems security (OCW).  
   https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/
 - **Stanford CS155 Computer & Network Security** — Public materials & past lectures.  
@@ -608,6 +634,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
   https://omscs.gatech.edu
 
 ### Vendor/Platform Programs
+
 - **OffSec** — Labs-first (PWK/OSCP, AWAE/OSWE, OSEP). https://www.offsec.com
 - **SANS / GIAC** — Premium courses; maps directly to GIAC. https://www.sans.org
 - **HTB Academy** — Modular courses + hands-on labs + certs. https://academy.hackthebox.com
@@ -625,6 +652,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 > Goal: understand frameworks, map controls to real telemetry, automate evidence, and continuously monitor. EU-centric bits included (NIS2/GDPR/DORA).
 
 ### Core Frameworks & Standards (know these)
+
 - **ISO/IEC 27001:2022** — ISMS certification standard; Annex A controls; pair with **27002:2022** for guidance.  
   https://www.iso.org/standard/27001
 - **NIST Cybersecurity Framework (CSF) 2.0** — High-level Identify-Protect-Detect-Respond-Recover functions; profiles/tiers.  
@@ -662,12 +690,14 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 10. **Tabletop & incident drills**: run 2–3 tabletop exercises (ransomware, credential compromise, lost laptop). Record lessons learned as evidence for governance clauses.
 
 ### GRC & Evidence Management (open-source first)
+
 - **eramba (Community Edition)** — Open-source GRC (policies, risk, audits, compliance). https://www.eramba.org
 - **OpenControl / Compliance-Masonry** — YAML-based control catalogs & docs (FedRAMP origins; still useful conceptually). https://open-control.org
 - **OSCAL (NIST)** — Machine-readable security controls (XML/JSON/YAML) to model systems and assessments. https://pages.nist.gov/OSCAL/
 - **Documize / Git + Markdown** — Lightweight policy repository with versioning; simple beats bloated.
 
 ### Technical Compliance & Benchmark Scanners
+
 - **OpenSCAP + SCAP Security Guide (SSG)** — Automated config scans & remediations for Linux/Windows; DISA/STIG/PCI/GDPR profiles.  
   https://www.open-scap.org · https://github.com/ComplianceAsCode/content
 - **Lynis** — Host auditing for Unix/Linux; good for baseline hardening. https://cisofy.com/lynis/
@@ -680,6 +710,7 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 - **Kubescape** — K8s posture/compliance incl. NSA/CISA hardening. https://github.com/kubescape/kubescape
 
 ### Policy-as-Code / Compliance-as-Code (shift-left)
+
 - **Open Policy Agent (OPA) / Gatekeeper** — Rego policies for K8s admission & CI checks. https://www.openpolicyagent.org
 - **Kyverno** — Native K8s policy engine with rich policy packs. https://kyverno.io
 - **Conftest** — Test structured configs (YAML/JSON/HCL) with OPA/Rego in CI. https://www.conftest.dev
@@ -690,22 +721,26 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 - **OPA Gatekeeper Library** — Prebuilt constraint templates/policies. https://github.com/open-policy-agent/gatekeeper-library
 
 ### Continuous Control Monitoring (endpoint/logging)
+
 - **osquery** — SQL over system state; schedule compliance queries (disk encryption, firewall, admin users). https://osquery.io
 - **Wazuh** — Open-source SIEM/XDR with PCI/HIPAA rules, FIM, CIS checks. https://wazuh.com
 - **Elastic Security (ELK)** — SIEM & detection; map rules to MITRE & compliance. https://www.elastic.co/security
 - **Microsoft Defender + Sentinel** — If you’re in Azure/M365 (student-friendly lab licenses exist). https://learn.microsoft.com/azure/sentinel/
 
 ### Cloud-Native Governance
+
 - **AWS**: Organizations, Control Tower, Config, Security Hub, Audit Manager, Macie, GuardDuty. https://aws.amazon.com/security
 - **Azure**: Policy, Defender for Cloud, Purview (data governance), Blueprints. https://azure.microsoft.com
 - **Google Cloud**: Security Command Center, Policy Controller (OPA Gatekeeper), Cloud Asset Inventory. https://cloud.google.com/security
 - **Kubernetes**: Admission controls + PSP replacements (OPA/Kyverno), CIS Benchmark via kube-bench.
 
 ### Privacy (EU-centric)
+
 - **GDPR text + EDPB guidelines** — Interpretations for DPIA, DPO, consent, transfers. https://edpb.europa.eu
 - **IAPP** — Solid primers and mappings (CIPP/E). https://iapp.org
 
 ### Templates & Starters (use, then customize)
+
 - **Policy Starter Kits** — SANS Security Policy Templates; CIS sample policies.  
   https://www.sans.org/information-security-policy/ · https://www.cisecurity.org/insights/white-papers
 - **Incident Response** — NCSC-UK IR guidance & playbooks; CISA tabletop templates.  
@@ -713,12 +748,12 @@ Operate only in lab or with written authorization. Many tools are detected by ED
 - **Risk Register & SoA** — Keep simple CSV/Markdown in Git; link each row to evidence and control IDs.
 
 ### Student Lab Checklist (ISO-27001-ish mini ISMS)
-- Scope a small lab (laptop, Kali VM, Windows VM, small cloud account).  
-- Create a lightweight **ISMS folder**: Policies/, RiskRegister.csv, Assets.csv, ControlMatrix.csv, Evidence/.  
-- Enforce MFA, BitLocker/FileVault, baseline firewall, auto-patch, EDR.  
-- Enable central logging (**Wazuh/Elastic**), document retention.  
-- Run **Lynis/OpenSCAP** on hosts; **Prowler/ScoutSuite** on cloud; **kube-bench** if you use K8s.  
+
+- Scope a small lab (laptop, Kali VM, Windows VM, small cloud account).
+- Create a lightweight **ISMS folder**: Policies/, RiskRegister.csv, Assets.csv, ControlMatrix.csv, Evidence/.
+- Enforce MFA, BitLocker/FileVault, baseline firewall, auto-patch, EDR.
+- Enable central logging (**Wazuh/Elastic**), document retention.
+- Run **Lynis/OpenSCAP** on hosts; **Prowler/ScoutSuite** on cloud; **kube-bench** if you use K8s.
 - Monthly: audit users/admins, key rotation, backup restore test, tabletop IR scenario.
 
 [Back to top](#navigation)
-
